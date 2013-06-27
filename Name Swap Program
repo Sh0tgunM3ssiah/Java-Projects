@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class swap
+{
+
+  public static void main(String[] args)
+	{
+		Scanner console = new Scanner(System.in);
+		
+		System.out.print ("\nYou will be asked to enter two names."
+			+"\nThe program will display the names you entered, "
+			+"\nswap the names, and then display them after they "
+			+"\nare swapped."
+			+"\n");
+
+		String first_Name;
+		String last_Name;
+
+		System.out.print ("\nPlease enter the first name:\n");
+		first_Name = console.next();
+
+		System.out.print ("Please enter the second name:\n");
+		last_Name = console.next();
+
+		System.out.print ("\nYou have entered " + first_Name 
+			+" as your first name and " + last_Name 
+			+" as your second name.");
+
+		System.out.print("\n"
+			+"\n");
+
+		System.out.print ("After swapping the names, the first name is " + last_Name
+			+ " and the second name is " + first_Name
+			+"\n"
+			+"\n");
+	}
+}
