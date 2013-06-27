@@ -1,0 +1,46 @@
+import javax.swing.*;
+public class MinMaxSalary
+{
+    
+    public static void main(String args[])
+    {
+        int ARRAY_SIZE = 10;
+        double salary [] = new double [ARRAY_SIZE];
+        int loopIndex;
+        double Salary;
+        String salaryString;
+        double min, max;
+        double total, average;
+        for(loopIndex = 0;loopIndex < salary.length;loopIndex++)
+        {
+            salaryString = JOptionPane.showInputDialog("Enter a salary: ");
+            Salary = Double.parseDouble(salaryString);
+            
+            salary[loopIndex] = Salary;
+        }
+        min = salary[0];
+        max = salary[0];
+        total = salary[0];
+        average = salary[0];
+        for(loopIndex = 1; loopIndex < salary.length; loopIndex++)
+        {
+            total += salary[loopIndex];
+            if(salary[loopIndex] > max)
+                max = salary[loopIndex];
+            if(salary[loopIndex] < min)
+                min = salary[loopIndex];
+        }
+        for(loopIndex = 0; loopIndex < salary.length; loopIndex++)
+            
+            
+        // Calculate the average of the 10 salaries.
+            average = total / ARRAY_SIZE;
+        // Print the salaries stored in the salaries array.
+        System.out.println("The salaries in the array are: " + ;
+        // Print the maximum salary, minimum salary, and average salary. 
+        System.out.println("Maximum salary: " + max);
+        System.out.println("Minimum salary: " + min);
+        System.out.println("Average salary: " + average);
+        System.exit(0);
+    }
+}
