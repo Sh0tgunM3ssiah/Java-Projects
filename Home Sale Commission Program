@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Home2
+{
+  public static void main(String[] args)
+	{
+		Scanner console = new Scanner(System.in);
+
+		Double Price;
+		
+		String OwnerStr;
+		String PriceStr;
+		String OutputStr;
+
+		System.out.print ("This program asks the user for a name and selling amount" + "\n" + 		"of a home, and then calculates the cost to sell the home and the commission of" + "\n" + "an individual sales agent.\n" + "\n" + "\n" + "Please enter the owner's last name: \n");
+		OwnerStr = console.next();
+
+		System.out.print ("Please enter the sales price of the home: \n");
+		PriceStr = console.next();
+
+		Price = Double.parseDouble(PriceStr);
+
+		System.out.print ("The " + OwnerStr + "'s home sold for $" + Price + "\n" +
+		"The cost to sell the home was $" + Price * 0.06 + "\n" +
+		"The sales agent earned $" + Price * 0.015 + "\n");
+
+	}
+}
