@@ -1,0 +1,32 @@
+import javax.swing.JOptionPane;
+
+public class NameSort
+
+{
+    public static void main(String[] args)
+    {
+    
+        String Name1, Name2, Name3, OutputStr;
+    
+    Name1 =
+        JOptionPane.showInputDialog
+    ("This program asks the user for 3 names and then alphabetizes them." + "\n" + "\n" + "Please enter the first name: ");
+    
+    Name2 =
+        JOptionPane.showInputDialog
+    ("Please enter the second name: ");
+    
+    Name3 =
+        JOptionPane.showInputDialog
+    ("Please enter the third name: ");
+        
+
+    OutputStr = ("The names in alphabetical order are: " + "\n" + "\n");
+    
+    JOptionPane.showMessageDialog(null, OutputStr, "Name Sort Program",
+                                  JOptionPane.INFORMATION_MESSAGE);
+
+        
+        System.exit(0);
+    }
+}
