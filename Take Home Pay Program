@@ -1,0 +1,40 @@
+import javax.swing.JOptionPane;
+public class Payroll2
+{
+  public static void main(String args[])
+	{
+		double salary;
+		double stateTax;
+		double federalTax;
+		double numDependents;
+		double dependentDeduction;
+		double totalWithholding;
+		double takeHomePay;
+                String salaryString, numDependString;
+                
+                salaryString = JOptionPane.showInputDialog(
+                            "Please enter the salary: ");
+                salary = Double.parseDouble (salaryString);
+                
+                numDependString = JOptionPane.showInputDialog(
+                            "Please enter the number of dependents: ");
+                numDependents = Double.parseDouble (numDependString);
+
+		// Calculate state tax here.
+                stateTax = salary * 0.06;
+		System.out.println("State Tax: $" + stateTax);
+		// Calculate federal tax here. 
+                federalTax = salary * 0.25;
+		System.out.println("Federal Tax: $" + federalTax);
+		// Calculate dependant deduction here.
+                dependentDeduction = salary * (0.02 * numDependents);
+		System.out.println("Dependents: $" + dependentDeduction);
+		// Calculate total withholding here.
+                totalWithholding = stateTax + federalTax;
+		// Calculate take home pay here.
+                takeHomePay = salary - totalWithholding + dependentDeduction;
+		System.out.println("Salary: $" + salary);
+		System.out.println("Take Home Pay: $" + takeHomePay);
+		System.exit(0);
+	}
+}
