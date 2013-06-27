@@ -1,0 +1,44 @@
+import javax.swing.JOptionPane;
+
+public class Power1
+{
+  public static void main(String[] args)
+	{
+
+		double BaseNum;
+		double ExpNum;
+
+		String BaseNumString;
+		String ExpNumString;
+		String outputStr;
+
+		System.out.print ("This program asks the user for two values.\n"
+			+"\nThe first value will be used as a base number; the second value "
+			+"will be used as an exponent.\n"
+			+"\n"
+			+"The program calculates the value of the base number raised to "
+			+"the exponent number."
+			+"\n"
+			+"\n");
+
+		BaseNumString =
+			JOptionPane.showInputDialog
+				("Enter the base number: ");
+
+			BaseNum = Double.parseDouble(BaseNumString);
+
+		ExpNumString =
+			JOptionPane.showInputDialog
+				("Enter the exponent number: ");
+
+			ExpNum = Double.parseDouble(ExpNumString);
+
+		outputStr = ("The value of " + BaseNum + " raised to the exponent " + ExpNum
+				+" is " + Math.pow(BaseNum, ExpNum));
+
+		JOptionPane.showMessageDialog(null, outputStr, "Exponent Program",
+						JOptionPane.INFORMATION_MESSAGE);
+
+		System.exit(0);
+	}
+}
