@@ -1,0 +1,63 @@
+import java.io.*;
+import java.util.*;
+import javax.swing.JOptionPane;
+
+public class Gifts1
+{
+  public static void main(String[] args) throws
+							FileNotFoundException
+	{
+		double quantity1, quantity2;
+		double cost1, cost2;
+
+		String Item1Str, Item2Str, quantity1Str, quantity2Str, cost1Str, cost2Str;
+
+		PrintWriter outFile = new
+					PrintWriter("order.out");
+
+		quantity1Str = 
+			JOptionPane.showInputDialog
+			("This program asks the user for a quantity, cost, and description \n"
+			+ "of an item to be ordered from a wholesaler for a gift shop.\n"
+			+ "An output file is created with the data entered." + "\n" + "\n"
+			+ "Enter the quantity of your first item:");
+
+			quantity1 = Double.parseDouble(quantity1Str);
+
+		cost1Str = 
+			JOptionPane.showInputDialog
+			("Enter the TOTAL cost of your first items:");
+
+			cost1 = Double.parseDouble(cost1Str);
+
+		Item1Str =
+			JOptionPane.showInputDialog
+			("Enter the description of your first item:");
+
+		quantity2Str =
+			JOptionPane.showInputDialog
+			("Enter the quantity of your second item:");
+
+			quantity2 = Double.parseDouble(quantity2Str);
+
+		cost2Str =
+			JOptionPane.showInputDialog
+			("Enter the TOTAL cost of your second item:");
+
+			cost2 = Double.parseDouble(cost2Str);
+
+		Item2Str =
+			JOptionPane.showInputDialog
+			("Enter the description of your second item:");
+
+		outFile.println("Item: " + Item1Str + "\n" + 
+					"Quantity: " + quantity1 + "  Cost: $" + cost1
+					+ "\n" + "\n");
+
+		outFile.println("Item: " + Item2Str + "\n" + 
+					"Quantity: " + quantity2 + "  Cost: $" + cost2
+					+ "\n" + "\n");
+
+		outFile.close();
+	}
+}
