@@ -1,0 +1,39 @@
+import javax.swing.JOptionPane;
+
+public class TVmodel
+
+{
+
+    public static void main(String[] args)
+    {
+        
+        String OutputStr1, OutputStr2, OutputStr3, OutputStr4, OutputStr5;
+        int num;
+        
+    OutputStr1 =
+        JOptionPane.showInputDialog
+        ("This program asks the user to enter a TV model number." + "\n" + "The description of the model chosen will be displayed" + "\n" + "\n" + "\n" + "Please enter the model number chosen:" + "\n" + "\n" + "Model 100 comes with remote control, timer," + "\n" + "and stereo sound and costs $1000" + "\n" + "\n" + "Model 200 comes with all features of model 100" + "\n" + "and picture-in-picture, and costs $1200" + "\n" + "\n" + "Model 300 comes with all the features of Model 200" + "\n" + "and HDTV, flat screen, 16 x 9 aspect ratio and costs $2400");
+        
+        num = Integer.parseInt(OutputStr1);
+        
+        switch (num)
+        {
+            case 100:
+             OutputStr2 = "You chose the Model 100, which features" + "\n" + "remote control, timer, and stereo sound and costs $1000";
+                JOptionPane.showMessageDialog(null, OutputStr2, "TV Model Program", JOptionPane.INFORMATION_MESSAGE);
+                break;
+            case 200:
+             OutputStr3 = "You chose the Model 200, which features" + "\n" + "remote control, timer, stereo sound, and PIP" + "\n" + "and costs $1200";
+                JOptionPane.showMessageDialog(null, OutputStr3, "TV Model Program", JOptionPane.INFORMATION_MESSAGE);
+                break;
+            case 300:
+             OutputStr4 = "You chose the Model 300, which features" + "\n" + "remote control, timer, stereo sound, PIP" + "\n" + "HDTV, flat screen, and 16 x 9 aspect ratio" + "\n" + "and costs $2400";
+                JOptionPane.showMessageDialog(null, OutputStr4, "TV Model Program", JOptionPane.INFORMATION_MESSAGE);
+                break;
+            default:
+             OutputStr5 = "Invalid Model Number";
+                JOptionPane.showMessageDialog(null, OutputStr5, "TV Model Program", JOptionPane.INFORMATION_MESSAGE);
+                break;
+        }
+    }
+}
