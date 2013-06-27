@@ -1,0 +1,41 @@
+public class Words
+{
+  public static void main(String[] args)
+	{
+		String str1;
+		String str2;
+
+		str1 = "Hi";
+		str2 = "Hello World";
+
+		System.out.print ("\nThis program demonstrates commonly used string methods."
+			+ "\nThe output displayed uses the string values \"Hi\" and \"Hello World\""
+			+ "\n");
+
+		System.out.print ("\nThe length of the string \"Hi\" is " + str1.length()
+			+"\n");
+
+		System.out.print ("\nThe length of the string \"Hello World\" is " + str2.length()
+			+"\n");
+
+		System.out.print ("\nThe index of the first character 'o' in \"Hello World\" is "
+			+ str2.indexOf('o')
+			+"\n");
+
+		System.out.print ("\nThe index of the second character 'o' in \"Hello World\" is "
+			+str2.indexOf('o', 5)
+			+"\n");
+
+		System.out.print ("\nThe concatenation of \"Hi\" and \"Hello World\" is "
+			+"\"Hi World\""
+			+"\n");
+
+		System.out.print ("\nThe string \"Hello World\" in all lowercase letters is "
+			+ str2.toLowerCase()
+			+"\n");
+
+		System.out.print ("\nThe string \"Hello World\" in all uppercase letters is "
+			+ str2.toUpperCase()
+			+"\n");
+	}
+}
