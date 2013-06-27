@@ -1,0 +1,20 @@
+public class NewAge
+{
+   public static void main(String args[])
+   {
+      // Declare and initialize your variables here.
+      int newAge;
+      int currentAge;
+      int currentYear;
+      
+      currentAge = 22;
+      currentYear = 2013;
+  	
+      newAge = currentAge + (2060 - currentYear);
+
+      System.out.println("My Current Age is " + currentAge);
+      System.out.println("I will be " + newAge + " in 2060.");
+
+      System.exit(0);
+   }
+}
