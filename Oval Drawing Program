@@ -1,0 +1,38 @@
+import java.awt.*;
+import javax.swing.*;
+
+public class OvalProgram extends JApplet
+{
+  public void paint( Graphics g)
+	{
+		String InputString;
+		int numOfOvals, i, x, y, height, width;
+
+		InputString = 
+		JOptionPane.showInputDialog
+		("Please enter the number of ovals to be drawn: ");
+		numOfOvals = Integer.parseInt(InputString);
+
+		setSize(425, 425);
+		super.paint(g);
+
+		i = 0;
+		x = 5;
+		y = 5;
+		width = 5;
+		height = 5;
+
+		while (i <= numOfOvals);
+		{
+			g.drawOval(x, y, width, height);
+			
+			x++;
+			y++;
+			width++;
+			height++;
+			i++;
+		}
+
+	}
+	
+}
