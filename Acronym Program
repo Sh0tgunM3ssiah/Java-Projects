@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Acronym
+{
+  public static void main(String[] args)
+	{
+
+		Scanner console = new Scanner(System.in);
+
+		String FirstStr;
+		String SecondStr;
+		String ThirdStr;
+
+		System.out.print ("\nThis program asks the user for three words.\n"
+			+ "The first letter of each word is extracted, \n"
+			+ "and then the acronym formed by the three letters is displayed."
+			+ "\n"
+			+ "\n");
+
+		System.out.print ("Please enter the first word:\n");
+		FirstStr = console.next();
+
+		System.out.print ("Please enter the second word:\n");
+		SecondStr = console.next();
+
+		System.out.print ("Please enter the third word:\n");
+		ThirdStr = console.next();
+
+		System.out.print ("\nYou have enter the following words:\n"
+			+ FirstStr + " " + SecondStr + " " + ThirdStr
+			+"\n");
+
+		System.out.print ("\nThe acronym for your words is "
+			+ FirstStr.charAt(0) + SecondStr.charAt(0)
+			+ ThirdStr.charAt(0)
+			+"\n"
+			+"\n");
+	}
+}
